@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us Page</title>
+    <link rel="stylesheet" href="../css/about-us.css">
+    <link rel="stylesheet" href="../css/footer.css" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        .lightbox-img {
+            margin: auto;
+            display: block;
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: 'Inter';
+        }
+
+        li,
+        a {
+            font-size: 16px;
+            color: #000000;
+            font-weight: 500;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 30px 10%;
+            height: 10px;
+        }
+
+        .logo {
+            height: 50px;
+            margin-right: auto;
+            margin-left: 0;
+        }
+
+        /* for nav bar */
+        .nav_bar {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Inter';
+            font-weight: bold;
+        }
+
+        .nav_bar li {
+            display: inline-block;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .nav_menu_items {
+            transition: all 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: #009B5A;
+        }
+
+        /*use of internal css*/
+        .contact-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #009B5A;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        /*footer*/
+        .contact-button:hover {
+            background-color: gray;
+            color: black;
+        }
+        footer {
+            background-color: #eee;
+            color: #000000;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logofooter img {
+            width: 100px;
+        }
+
+        .description {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        .footer-links ul li {
+        margin-right: 20px;
+        }
+
+        .footer-links ul li a {
+            color: #009b5a;
+            text-decoration: none;
+        }
+
+        .footer-links ul li a:hover {
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- navigation of the page -->
+        <img class="logo" src="../images/logo.jpg">
+        <nav>
+            <ul class="nav_bar">
+                <li class="nav_menu_items"><a href="./index.html">Home</a></li>
+                <li class="nav_menu_items"><a href="./product.html">Products</a></li>
+                <li class="nav_menu_items"><a href="./blog.html">Blog</a></li>
+                <li class="nav_menu_items"><a href="./research.html">Research</a></li>
+                <li class="nav_menu_items"><a href="./about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- About Section -->
+    <!-- <div class="about-section">
+
+    </div> -->
+    <!-- Team Section -->
+    
+    <div class="container">
+        <h1>Our Members</h1>
+        <div class="card">
+            <!--use of inline css-->
+            <img src="../images/aboutus/nitik.jpg" style="width:60%"
+                onclick="openLightbox('../images/aboutus/nitik.jpg')"
+
+             <h2>Nitik shrestha </h2>
+            <h4 style="color: gray;">Bsc Computing</h4>
+            <a href="./portfolio/nitik.html" class="contact-button">Contact</a>
+        </div>
+        <div class="card">
+            <img src="../images/aboutus/karmi.jpg" style="width:60%"
+                onclick="openLightbox('../images/aboutus/karmi.jpg')">
+            <h2>Karmistha Sthapit</h2>
+            <h4 style="color: gray;">Bsc Computing</h4>
+            <a href="./portfolio/karmistha.html" class="contact-button">Contact</a>
+        </div>
+        <div class="card">
+            <img src="../images/aboutus/ram.jpg" style="width:60%" onclick="openLightbox('../images/aboutus/ram.jpg')">
+            <h2>Ram Prashad mahato</h2>
+            <h4 style="color: gray;">Bsc Computing</h4>
+            <a href="./portfolio/ram.html" class="contact-button">Contact</a>
+        </div>
+        <div class="card">
+            <img src="../images/aboutus/avinab.jpg" style="width:60%"
+                onclick="openLightbox('../images/aboutus/avinab.jpg')">
+            <h2>Abhinav Bhattarai</h2>
+            <h4 style="color: gray;">Bsc Computing</h4>
+            <a href="./portfolio/Abhinav.html" class="contact-button">Contact</a>
+        </div>
+    </div>
+    <!--footer begins here-->
+    <footer>
+        <div class="footer-content">
+            <div class="logofooter">
+                <img src="../images/Logof.png" alt="Logo">
+            </div>
+            <div class="description">
+                <p>Over at Fullcart we believe in Sasto, Ramro, Chitto</p>
+            </div>
+            <a href="./portfolio/ram.html" class="contact-button">Contact</a>
+            <div class="footer-links">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="research.html">Research</a></li>
+                </ul>
+            </div>
+            <div class="description">
+              <p>@ 2024 FoodCart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+<!-- Lightbox container -->
+<div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img src="" alt="Lightbox Image" class="lightbox-img" id="lightbox-img">
+</div>
+
+<script>
+    // Function to open the lightbox
+    function openLightbox(imageSrc) {
+        var lightbox = document.getElementById('lightbox');
+        var lightboxImg = document.getElementById('lightbox-img');
+
+        lightbox.style.display = 'block';
+        lightboxImg.src = imageSrc;
+    }
+
+    // Function to close the lightbox
+    function closeLightbox() {
+        var lightbox = document.getElementById('lightbox');
+
+        lightbox.style.display = 'none';
+    }
+</script>
+</body>
+
+</html>

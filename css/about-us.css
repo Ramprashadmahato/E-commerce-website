@@ -1,0 +1,42 @@
+
+/* About section styles */
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    /* Fixing the width for each card */
+    width: 300px; 
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    display: inline-block;
+    /* Aligning cards to the top */
+    vertical-align: top; 
+}
+
+.card img {
+    width: 200px; 
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    aspect-ratio: 1;
+}
+/* css for the heading */
+.card h2 {
+    margin-bottom:15px;
+}

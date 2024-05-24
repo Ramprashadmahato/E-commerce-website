@@ -1,0 +1,92 @@
+/* Reset CSS */
+body, h1, h2, h3, p, ul, li, form, label, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #009B5A;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Main Content */
+section {
+    padding: 50px 0;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+.portfolio-item {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+}
+
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #009B5A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007846;
+}
